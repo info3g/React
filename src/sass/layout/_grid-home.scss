@@ -1,0 +1,21 @@
+@import "../utils/_variables.scss";
+.grid-home {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem 2rem;
+    padding: 2.5rem 6rem 1rem 6rem;
+    font-family: $barlow, sans-serif;
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 5rem;
+    }
+    @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 4rem;
+    }
+    @media screen and (max-width: 430px) {
+        grid-template-columns: 1fr;
+        padding: 3rem 2.5rem;
+    }
+}

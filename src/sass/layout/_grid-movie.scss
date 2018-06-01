@@ -1,0 +1,24 @@
+@import "../utils/_variables.scss";
+.grid-movie {
+    display: grid;
+    position: relative;
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: ". poster infos ." ". recommendations recommendations ." ". photos photos ." ". details details .";
+    font-family: $barlow, sans-serif;
+    margin: 2.5rem 0rem 1rem 0rem;
+    .movie-poster {
+        grid-area: poster;
+        img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: ". infos infos ." ". poster poster ." ". recommendations recommendations ." ". photos photos ." ". details details .";
+        .grid-infos {
+            padding-left: 0rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
