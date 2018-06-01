@@ -105,13 +105,13 @@ export default class Input extends React.Component {
                                 <div className={upcoming} onClick={this.handleClickUpcoming}>
                                     <span>Upcoming</span>
                                 </div>
-                                <a
+                                {/* <a
                                     className={github}
                                     href='https://github.com/tristan-lanoye/react-moviedb'
                                     target='blank'
                                     title='View code on github'>
                                     <span className='fab fa-github'></span>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -128,14 +128,14 @@ export default class Input extends React.Component {
                         <div className={upcoming} onClick={this.handleClickUpcoming}>
                             <span>upcoming</span>
                         </div>
-                        <div className={github}>
+                        {/* <div className={github}>
                             <a
                                 href='https://github.com/tristan-lanoye/react-moviedb'
                                 target='blank'
                                 title='View code on github'>
                                 <span className='fab fa-github'></span>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 {this.state.homepage
